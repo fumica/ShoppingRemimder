@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,12 @@
 		5A05A9AE2659F83300CF00B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A05A9AC2659F83300CF00B2 /* LaunchScreen.storyboard */; };
 		5A05A9B92659F83300CF00B2 /* ShoppingRemimderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A05A9B82659F83300CF00B2 /* ShoppingRemimderTests.swift */; };
 		5A05A9C42659F83400CF00B2 /* ShoppingRemimderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A05A9C32659F83400CF00B2 /* ShoppingRemimderUITests.swift */; };
+		5A05A9D3265A006D00CF00B2 /* FSCalendar in Frameworks */ = {isa = PBXBuildFile; productRef = 5A05A9D2265A006D00CF00B2 /* FSCalendar */; };
+		5A05A9DD265A295600CF00B2 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 5A05A9DC265A295600CF00B2 /* Realm */; };
+		5A05A9DF265A295600CF00B2 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 5A05A9DE265A295600CF00B2 /* RealmSwift */; };
+		5A5E99AB265FB4690033AB91 /* AddressListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5E99AA265FB4690033AB91 /* AddressListViewController.swift */; };
+		5A5E99AD266102B80033AB91 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5E99AC266102B70033AB91 /* AddViewController.swift */; };
+		5A5F87A6265EA571002646DA /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5F87A5265EA571002646DA /* Address.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +55,9 @@
 		5A05A9BF2659F83400CF00B2 /* ShoppingRemimderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShoppingRemimderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A05A9C32659F83400CF00B2 /* ShoppingRemimderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingRemimderUITests.swift; sourceTree = "<group>"; };
 		5A05A9C52659F83400CF00B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A5E99AA265FB4690033AB91 /* AddressListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressListViewController.swift; sourceTree = "<group>"; };
+		5A5E99AC266102B70033AB91 /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
+		5A5F87A5265EA571002646DA /* Address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +65,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A05A9DF265A295600CF00B2 /* RealmSwift in Frameworks */,
+				5A05A9DD265A295600CF00B2 /* Realm in Frameworks */,
+				5A05A9D3265A006D00CF00B2 /* FSCalendar in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,6 +118,9 @@
 				5A05A9AA2659F83300CF00B2 /* Assets.xcassets */,
 				5A05A9AC2659F83300CF00B2 /* LaunchScreen.storyboard */,
 				5A05A9AF2659F83300CF00B2 /* Info.plist */,
+				5A5F87A5265EA571002646DA /* Address.swift */,
+				5A5E99AA265FB4690033AB91 /* AddressListViewController.swift */,
+				5A5E99AC266102B70033AB91 /* AddViewController.swift */,
 			);
 			path = ShoppingRemimder;
 			sourceTree = "<group>";
@@ -144,6 +159,11 @@
 			dependencies = (
 			);
 			name = ShoppingRemimder;
+			packageProductDependencies = (
+				5A05A9D2265A006D00CF00B2 /* FSCalendar */,
+				5A05A9DC265A295600CF00B2 /* Realm */,
+				5A05A9DE265A295600CF00B2 /* RealmSwift */,
+			);
 			productName = ShoppingRemimder;
 			productReference = 5A05A99E2659F82400CF00B2 /* ShoppingRemimder.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +235,10 @@
 				Base,
 			);
 			mainGroup = 5A05A9952659F82400CF00B2;
+			packageReferences = (
+				5A05A9D1265A006D00CF00B2 /* XCRemoteSwiftPackageReference "FSCalendar" */,
+				5A05A9DB265A295600CF00B2 /* XCRemoteSwiftPackageReference "realm-cocoa" */,
+			);
 			productRefGroup = 5A05A99F2659F82400CF00B2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -259,7 +283,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				5A05A9A62659F82400CF00B2 /* ViewController.swift in Sources */,
+				5A5E99AB265FB4690033AB91 /* AddressListViewController.swift in Sources */,
+				5A5E99AD266102B80033AB91 /* AddViewController.swift in Sources */,
 				5A05A9A22659F82400CF00B2 /* AppDelegate.swift in Sources */,
+				5A5F87A6265EA571002646DA /* Address.swift in Sources */,
 				5A05A9A42659F82400CF00B2 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -437,12 +464,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = ShoppingRemimder/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = app.kawano.com.ShoppingRemimder;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.com.lifeistech.shoppingreminder;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -454,14 +482,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 2K446D59RQ;
 				INFOPLIST_FILE = ShoppingRemimder/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = app.kawano.com.ShoppingRemimder;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.com.lifeistech.shoppingreminder;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "L13-Kawano-Distribution";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -587,6 +618,43 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5A05A9D1265A006D00CF00B2 /* XCRemoteSwiftPackageReference "FSCalendar" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/WenchaoD/FSCalendar";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.8.2;
+			};
+		};
+		5A05A9DB265A295600CF00B2 /* XCRemoteSwiftPackageReference "realm-cocoa" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-cocoa";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.7.6;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5A05A9D2265A006D00CF00B2 /* FSCalendar */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5A05A9D1265A006D00CF00B2 /* XCRemoteSwiftPackageReference "FSCalendar" */;
+			productName = FSCalendar;
+		};
+		5A05A9DC265A295600CF00B2 /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5A05A9DB265A295600CF00B2 /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			productName = Realm;
+		};
+		5A05A9DE265A295600CF00B2 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5A05A9DB265A295600CF00B2 /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5A05A9962659F82400CF00B2 /* Project object */;
 }
